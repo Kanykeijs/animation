@@ -1,0 +1,68 @@
+body {
+  background-color: black;
+}
+div {
+  color: blue;
+  font-size: 30px;
+  animation-name: animation1, animation2;
+  transition-property: color;
+  transition-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.12, 0.69, 0.58, 0.65);
+}
+div:hover {
+  color: indigo;
+}
+
+img {
+    color-interpolation-filters: yellow;
+    filter: opacity(0.6) drop-shadow(0 0 0 red); 
+    }
+
+}
+/* @keyframes animation1 {
+  0% {
+    width: 500px;
+    height: 200px;
+    color: mediumvioletred;
+  }
+  50% {
+    height: 200px;
+  }
+  100% {
+    font-size: 30px;
+    color: red;
+  }
+}
+@keyframes animation2 {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: 0px;
+  }
+} */
+@keyframes col {
+  0% {
+    filter: opacity(0.6) drop-shadow(0 0 0 red);
+  }
+  30% {
+    filter: opacity(0.6) drop-shadow(0 0 0 yellow);
+  }
+  30% {
+    filter: opacity(0.6) drop-shadow(0 0 0 blue);
+  }
+  60% {
+    filter: opacity(0.6) drop-shadow(0 0 0 orange);
+  }
+  85% {
+    filter: opacity(0.6) drop-shadow(0 0 0 green);
+  }
+  100% {
+    filter: opacity(0.6) drop-shadow(0 0 0 brown);
+  }
+}
